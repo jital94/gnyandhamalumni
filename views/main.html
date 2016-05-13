@@ -1,12 +1,10 @@
 <div ng-controller="MainCtrl" ng-init="loadData()">
 <div class="container">
-<div class="row" ng-repeat="(key, value) in data">
-	<div class="col-md-8" style="font-size:20px"><b>{{value.name}} ({{value.department}})</b></div>
-	<div class="col-md-4">{{value.contact}}</div>
-	<div class="col-md-12">{{value.description}}</div>
+<div class="row" ng-repeat="value in data">
+	<div class="col-md-8" style="font-size:20px"><b>{{value.Name}}</b></div>
+	<div class="col-md-4">{{value.Category}}</div>
+	<div class="col-md-12">{{value.Healthiness}}</div>
 	<div class="col-md-12" style="height:30px"></div>
 </div>
-
 </div>
-
 </div>

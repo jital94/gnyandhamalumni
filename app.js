@@ -16,6 +16,10 @@ app.config(function ($routeProvider)
       templateUrl: 'views/main.html',
       controller: 'MainCtrl'
     })
+    .when('/update', {
+      templateUrl: 'views/update.html',
+      controller: 'UpdateCtrl'
+    })
     .otherwise({
       redirectTo: '/'
     });
