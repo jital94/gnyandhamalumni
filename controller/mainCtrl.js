@@ -2,6 +2,9 @@
 
 app.controller('MainCtrl', function ($scope,$rootScope) 
 {
+  $scope.order_item="Name";
+  $scope.order_reverse=false;
+
   if (!$rootScope.studentData)
   {
     $rootScope.showLoad=true;
