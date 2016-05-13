@@ -1,10 +1,25 @@
 <div ng-controller="MainCtrl" ng-init="loadData()">
 <div class="container">
-<label>Search: <input ng-model="searchText"></label>
+<div class="form-group">
+<input type="text" class="form-control" ng-model="searchText" placeholder="Search Text">
+</div>
 <div class="row" ng-repeat="value in data | filter:searchText">
-	<div class="col-md-8" style="font-size:20px"><b>{{value.Name}}</b></div>
-	<div class="col-md-4">{{value.Category}}</div>
-	<div class="col-md-12">{{value.Healthiness}}</div>
+	<!-- onerror=" if (this.src!=''database/IDpics/{{value.Roll_No}}.jpg') this.src='database/IDpics/{{value.Roll_No}}.jpg'" -->
+	<!-- src="{{value.Link_To_Profile_Image}}" -->
+	<!-- database/IDpics/{{value.Roll_No}}.jpg -->
+<div class="col-md-2"><img src="{{value.Link_To_Profile_Image}}" height="100"></div>
+<div class="col-md-4" style="font-size:20px"><b>{{value.Name}}({{value.Department}})</b></div>
+<div class="col-md-2">{{value.Position}}</div>
+<div class="col-md-2">{{value.Organization}}</div>
+<div class="col-md-2">{{value.Location}}</div>
+<div class="col-md-8"> {{value.History_and_brief_bio}} </div>
+<div class="col-md-2"><a href="{{value.Facebook_Profile}}" target="_blank"><img src="logos/fb.png" height="20"></a></div>
+<div class="col-md-2"><a href="{{value.Linkedin_Profile}}" target="_blank"><img src="logos/linkedin.png" height="20"></a></div>
+	
+	
+	
+
+
 	<div class="col-md-12" style="height:30px"></div>
 </div>
 </div>
