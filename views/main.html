@@ -1,6 +1,7 @@
 <div ng-controller="MainCtrl" ng-init="loadData()">
 <div class="container">
-<div class="row" ng-repeat="value in data">
+<label>Search: <input ng-model="searchText"></label>
+<div class="row" ng-repeat="value in data | filter:searchText">
 	<div class="col-md-8" style="font-size:20px"><b>{{value.Name}}</b></div>
 	<div class="col-md-4">{{value.Category}}</div>
 	<div class="col-md-12">{{value.Healthiness}}</div>
