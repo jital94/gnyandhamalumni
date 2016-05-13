@@ -28,6 +28,31 @@ app.controller('MainCtrl', function ($scope,$rootScope)
     
 
   }
+
+  // http://plnkr.co/edit/Mlca2gXvXNVAXEsNbpCI?p=preview
+  $scope.customFilter = function (searchText) {
+    function comparator(a, b) {
+      return (''+a).toLowerCase().indexOf((''+b).toLowerCase()) > -1;
+    }
+    
+    var lookInKeys = ['Name', 'Position', 'Organization', 'Location', 'History_and_brief_bio'];
+    
+    return function (item) {
+      if (!searchText) {
+        return true; // no filter
+      }
+      
+      for (var i = 0; i < lookInKeys.length; i++) {
+        var key = lookInKeys[i];
+        if (comparator(item[key], searchText)) {
+          return true; // if any key is match, return true
+        }
+      }
+      
+      return false; // none of keys are match
+    };
+  };
+
   $scope.loadData = function ()
   {
     if (!$rootScope.studentData)

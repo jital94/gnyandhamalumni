@@ -17,7 +17,7 @@
     </tr>
 
 	</thead>
-  <tbody ng-repeat="value in studentData | orderObjectBy:order_item:order_reverse | filter:searchText" >
+  <tbody ng-repeat="value in studentData | orderObjectBy:order_item:order_reverse | filter:customFilter(searchText)" >
     <tr>
       <th scope="row"><img src="{{value.Link_To_Profile_Image}}" height="100"></th>
       <td>{{value.Name}}({{value.Department}})</td>
