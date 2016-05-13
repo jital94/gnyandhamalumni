@@ -3,24 +3,34 @@
 <div class="form-group">
 <input type="text" class="form-control" ng-model="searchText" placeholder="Search Text">
 </div>
-<div class="row" ng-repeat="value in data | filter:searchText">
-	<!-- onerror=" if (this.src!=''database/IDpics/{{value.Roll_No}}.jpg') this.src='database/IDpics/{{value.Roll_No}}.jpg'" -->
-	<!-- src="{{value.Link_To_Profile_Image}}" -->
-	<!-- database/IDpics/{{value.Roll_No}}.jpg -->
-<div class="col-md-2"><img src="{{value.Link_To_Profile_Image}}" height="100"></div>
-<div class="col-md-4" style="font-size:20px"><b>{{value.Name}}({{value.Department}})</b></div>
-<div class="col-md-2">{{value.Position}}</div>
-<div class="col-md-2">{{value.Organization}}</div>
-<div class="col-md-2">{{value.Location}}</div>
-<div class="col-md-8"> {{value.History_and_brief_bio}} </div>
-<div class="col-md-2"><a href="{{value.Facebook_Profile}}" target="_blank"><img src="logos/fb.png" height="20"></a></div>
-<div class="col-md-2"><a href="{{value.Linkedin_Profile}}" target="_blank"><img src="logos/linkedin.png" height="20"></a></div>
-	
-	
-	
-
-
-	<div class="col-md-12" style="height:30px"></div>
 </div>
-</div>
+<table class="table table-striped">
+	<thead>
+		<tr>
+      <td></td>
+      <td><b>Name</b></td>
+      <td><b>Position</b></td>
+      <td><b>Organization</b></td>
+      <td><b>Location</b></td>
+      <td><b>Facebook Profile</b></td>
+      <td><b>LinkedIn Profile</b></td>
+    </tr>
+
+	</thead>
+  <tbody ng-repeat="value in studentData | filter:searchText" >
+    <tr>
+      <th scope="row"><img src="{{value.Link_To_Profile_Image}}" height="100"></th>
+      <td>{{value.Name}}({{value.Department}})</td>
+      <td>{{value.Position}}</td>
+      <td>{{value.Organization}}</td>
+      <td>{{value.Location}}</td>
+      <td><a href="{{value.Facebook_Profile}}" target="_blank"><img src="logos/fb.png" height="40"></a></td>
+      <td><a href="{{value.Linkedin_Profile}}" target="_blank"><img src="logos/linkedin.png" height="40"></a></td>
+    </tr>
+    <tr>
+    	<td colspan="100%">{{value.History_and_brief_bio}}</td>
+    </tr>
+
+  </tbody>
+</table>
 </div>

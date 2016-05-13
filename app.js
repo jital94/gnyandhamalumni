@@ -13,12 +13,13 @@ app.config(function ($routeProvider)
 {
     $routeProvider
     .when('/', {
-      templateUrl: 'views/main.html',
-      controller: 'MainCtrl'
+      templateUrl: 'views/main.html'
     })
-    .when('/update', {
-      templateUrl: 'views/update.html',
-      controller: 'UpdateCtrl'
+    .when('/about', {
+      templateUrl: 'views/about.html'
+    })
+    .when('/contact', {
+      templateUrl: 'views/contact.html'
     })
     .otherwise({
       redirectTo: '/'
