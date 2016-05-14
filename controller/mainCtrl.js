@@ -2,6 +2,10 @@
 
 app.controller('MainCtrl', function ($scope,$rootScope) 
 {
+  
+  $scope.sortKey = 'Name';
+  $scope.reverse = false;
+
   // http://plnkr.co/edit/Mlca2gXvXNVAXEsNbpCI?p=preview 
   // custom filter on LOCAL_SETTINGS.searchInKeys
   var customFilterFn = function (searchText) {
