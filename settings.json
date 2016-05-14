@@ -1,9 +1,11 @@
-{
+ {
 	"collegeName": "Indian Institute of Technology, Kanpur",
 	"batch": "2012",
 	"collegeLogoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/IIT_Kanpur_Logo.svg/1024px-IIT_Kanpur_Logo.svg.png",
 	"spreadsheetLink": "https://docs.google.com/spreadsheets/d/1NwCNzquKbL1D9rAf4gQjTAIKM_l7XPM70mpisvh_sJg/pubhtml?gid=455637756&single=true",
-	"about": "About will be updated",
+	"about": "The whereabouts of the Y12 batch of IIT Kanpur. Inspired by (http://www.cs.cmu.edu/~mahim/class2001/).
+
+	In case of any suggestion or queries, please <a href = "/contact">contact us</a>.",
 	"contacts": [{
 		"name": "Akshay aggarwal",
 		"email": "aks.agg94@gmail.com"
@@ -13,5 +15,11 @@
 	}, {
 		"name": "Siddhant Manocha",
 		"email": "siddhantmanocha1994@gmail.com"
+	}, {
+		"name": "Peeyush Agarwal",
+		"email": "peeyushagarwal1994@gmail.com"
+	}, {
+		"name": "Pranav Maneriker",
+		"email": "pranavmane@gmail.com"
 	}]
 }
