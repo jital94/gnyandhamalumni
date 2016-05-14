@@ -8,16 +8,26 @@
 	<thead>
 		<tr>
       <td></td>
-      <td><b>Name</b></td>
-      <td><b>Position</b></td>
-      <td><b>Organization</b></td>
-      <td><b>Location</b></td>
-      <td><b>Facebook Profile</b></td>
-      <td><b>LinkedIn Profile</b></td>
+      <td ng-click="sort('Name')"><b>Name</b>
+		<span class="glyphicon sort-icon" ng-show="sortKey=='Name'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+	  </td>
+      <td ng-click="sort('Position')"><b>Position</b>
+		<span class="glyphicon sort-icon" ng-show="sortKey=='Position'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+	  </td>
+      <td ng-click="sort('Organization')"><b>Organization</b>
+		<span class="glyphicon sort-icon" ng-show="sortKey=='Organization'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+	  </td>
+      <td ng-click="sort('Location')"><b>Location</b>
+		<span class="glyphicon sort-icon" ng-show="sortKey=='Location'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+	  </td>
+      <td><b>Facebook Profile</b>
+	  </td>
+      <td><b>LinkedIn Profile</b>
+	  </td>
     </tr>
 
 	</thead>
-  <tbody ng-repeat="value in studentData | orderObjectBy:LOCAL_SETTINGS.sortEntriesBy:LOCAL_SETTINGS.orderDescending | filter:customFilter(searchText)" >
+  <tbody ng-repeat="value in studentData | orderBy:sortKey:reverse | filter:customFilter(searchText)" >
     <tr>
       <th scope="row"><img src="{{value.Link_To_Profile_Image}}" height="100"></th>
       <td>{{value.Name}}({{value.Department}})</td>

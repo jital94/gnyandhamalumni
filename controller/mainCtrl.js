@@ -51,6 +51,11 @@ app.controller('MainCtrl', function ($scope,$rootScope)
     
   };
 
+  $scope.sort = function(keyname){
+    $scope.sortKey = keyname;
+    $scope.reverse = !$scope.reverse;
+  }
+
   $scope.loadData = function ()
   {
     if (!$rootScope.studentData)
