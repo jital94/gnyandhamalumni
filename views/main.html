@@ -27,7 +27,7 @@
     </tr>
 
 	</thead>
-  <tbody ng-repeat="value in studentData | orderBy:sortKey:reverse | filter:customFilter(searchText)" >
+  <tbody dir-paginate="value in studentData | orderBy:sortKey:reverse | filter:customFilter(searchText) | itemsPerPage:10" >
     <tr>
       <th scope="row"><img src="{{value.Link_To_Profile_Image}}" height="100"></th>
       <td>{{value.Name}}({{value.Department}})</td>
@@ -44,3 +44,4 @@
   </tbody>
 </table>
 </div>
+<dir-pagination-controls direction-links="true" boundary-links="true"></dir-pagination-controls>
