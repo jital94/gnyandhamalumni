@@ -1,7 +1,7 @@
 <div ng-controller="MainCtrl" ng-init="loadData()">
 <div class="container">
 <div class="form-group">
-<input type="text" class="form-control" ng-model="searchText" placeholder="Search Text">
+<input type="text" class="form-control" ng-model="searchText" placeholder="Search Text" ng-show="!showLoad">
 </div>
 </div>
 <table class="table table-striped">
@@ -17,7 +17,7 @@
     </tr>
 
 	</thead>
-  <tbody ng-repeat="value in studentData | orderObjectBy:order_item:order_reverse | filter:customFilter(searchText)" >
+  <tbody ng-repeat="value in studentData | orderObjectBy:LOCAL_SETTINGS.sortEntriesBy:LOCAL_SETTINGS.orderDescending | filter:customFilter(searchText)" >
     <tr>
       <th scope="row"><img src="{{value.Link_To_Profile_Image}}" height="100"></th>
       <td>{{value.Name}}({{value.Department}})</td>
