@@ -30,7 +30,7 @@
 	</thead>
   <tbody dir-paginate="value in studentData | orderBy:sortKey:reverse | filter:customFilter(searchText) | itemsPerPage:10" >
     <tr>
-      <th scope="row"><img src="{{value.Link_To_Profile_Image}}" height="100"></th>
+      <th scope="row"><img src="{{value.Link_To_Profile_Image}}" width="100"></th>
       <td>{{value.Name}}({{value.Department}})</td>
       <td>{{value.Position}}</td>
       <td>{{value.Organization}}</td>
