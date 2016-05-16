@@ -1,3 +1,18 @@
+<style>
+#profileImg 
+{
+  height:50px;
+  width:50px;
+}
+#profileImg img
+{
+  max-width:100%; 
+  max-height:100%;
+  margin:auto;
+  display:block;
+}
+
+</style>
 <div ng-controller="MainCtrl" ng-init="loadData()">
 <h4>IITK {{LOCAL_SETTINGS.batch}} junta, please add your information at <a href="{{LOCAL_SETTINGS.formLink}}" target="_blank">here</a> </h4>
 <div class="container">
@@ -30,7 +45,7 @@
 	</thead>
   <tbody dir-paginate="value in studentData | orderBy:sortKey:reverse | filter:customFilter(searchText) | itemsPerPage:LOCAL_SETTINGS.paginateNumEntries" >
     <tr>
-      <th scope="row"><img src="{{value.Link_To_Profile_Image}}" height="100"></th>
+      <th scope="row"><div id="profileImg" afkl-lazy-image="{{value.Link_To_Profile_Image}}"></div></th>
       <td>{{value.Name}}({{value.Department}})</td>
       <td>{{value.Position}}</td>
       <td>{{value.Organization}}</td>

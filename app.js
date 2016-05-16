@@ -3,6 +3,7 @@
 
 
 var app = angular.module('iitky12App', [
+  'afkl.lazyImage',
   'angularUtils.directives.dirPagination',
   'ngCookies',
   'ngResource',
