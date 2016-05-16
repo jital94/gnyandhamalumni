@@ -28,6 +28,7 @@ Change the configuration settings in  batchWebsite/settings.json
 * defaultSortEntriesBy : default field on which entries are sorted (eg: Name)
 * orderDescending: order in which entires are sorted (true/false)
 * searchInKeys: list of fields on which search is allowed
+* paginateNumEntries: number of entries on a single page
 
 The rest of the fields  are self explanatory
 
