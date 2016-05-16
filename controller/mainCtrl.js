@@ -41,7 +41,7 @@ app.controller('MainCtrl', function ($scope,$rootScope)
     for (var key in data) 
     {
       if (!data[key].Link_To_Profile_Image)
-        data[key].Link_To_Profile_Image="database/IDpics/"+data[key].Roll_No+".jpg"
+        data[key].Link_To_Profile_Image=$scope.LOCAL_SETTINGS.defaultProfileImage;
     }
     $rootScope.studentData=data;
     $scope.$apply();

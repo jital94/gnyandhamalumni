@@ -7,6 +7,7 @@
 	"sortEntriesBy":"Name",
 	"orderDescending":false,
 	"searchInKeys": ["Name", "Position", "Organization", "Location", "History_and_brief_bio"],
+	"defaultProfileImage":"logos/default.png",
 	"contacts": [{
 		"name": "Akshay Aggarwal",
 		"email": "aks.agg94@gmail.com"
