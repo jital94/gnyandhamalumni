@@ -24,10 +24,16 @@
     "angular-sanitize": "1.2.16",
     "bootstrap": "~3.3.6",
     "tabletop": "~1.4.3",
-    "angular-utils-pagination": "~0.11.1"
+    "angular-utils-pagination": "~0.11.1",
+    "cloudinary_ng": "~1.0.0",
+    "ng-file-upload": "^11.0.2",
+    "angular-animate": "1.4.x"
   },
   "ignore": [
-	  "src/*",
-	  "database/*"
-  ]
+    "src/*",
+    "database/*"
+  ],
+  "resolutions": {
+    "angular": "1.4.x"
+  }
 }
