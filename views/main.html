@@ -11,11 +11,10 @@
   margin:auto;
   display:block;
 }
-
 </style>
 <div ng-controller="MainCtrl" ng-init="loadData()">
-<h4>Hi Gnyandhamians, please add your information at <a href="{{LOCAL_SETTINGS.formLink}}" target="_blank">here</a> </h4>
 <div class="container">
+<h4>Hi Gnyandhamians, please add your information at <a href="{{LOCAL_SETTINGS.formLink}}" target="_blank">here</a> </h4>
 <div class="form-group">
 <input type="text" class="form-control col-md-12" ng-model="searchText" placeholder="Search Text" ng-show="!showLoad">
 </div>
@@ -45,7 +44,7 @@
   <tbody dir-paginate="value in studentData | orderBy:sortKey:reverse | filter:customFilter(searchText) | itemsPerPage:LOCAL_SETTINGS.paginateNumEntries" >
     <tr>
       <th scope="row"><div id="profileImg" afkl-lazy-image="{{value.Link_To_Profile_Image}}"></div></th>
-      <td>{{value.Name}}({{value.Department}})</td>
+      <td>{{value.Name}}</td>
       <td>{{value.Position}}</td>
       <td>{{value.Organization}}</td>
       <td>{{value.Location}}</td>

@@ -1,32 +1,20 @@
 {
-	"collegeName": "Indian Institute of Technology, Kanpur",
-	"batch": "Y12",
-	"collegeLogoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/IIT_Kanpur_Logo.svg/1024px-IIT_Kanpur_Logo.svg.png",
-	"spreadsheetLink": "https://docs.google.com/spreadsheets/d/1yvt344w9_HJsmJeCOU4CjCkvTai9gNEFMTmDT7yKVqU/pubhtml",
-	"formLink":"http://bit.ly/iitky12",
-	"about": "The whereabouts of the Y12 batch of IIT Kanpur. Inspired by (www.cs.cmu.edu/~mahim/class2001/). In case of any queries or suggestions, contact us.",
+	"collegeName": "Gnyandham High School",
+	"batch": "2012",
+	"collegeLogoURL": "https://lh6.googleusercontent.com/-VxHnK8ZByME/VKpl-xZ8QQI/AAAAAAAAABY/O5gkyLn5WEY/w1044-h1045/School%2BLogo%2BHiten_2.jpg",
+	"spreadsheetLink": "https://docs.google.com/spreadsheets/d/1i9wdZs7ERkIUtF1lQ4duC_qa-9dKcpIq5vxdyfOT81U/pubhtml",
+	"formLink":"http://goo.gl/forms/WfjEfrHK57kvUXIb2",
+	"about": "The whereabouts of the 2012 batch of Gnyandham School. Inspired by (www.cs.cmu.edu/~mahim/class2001/). In case of any queries or suggestions, contact us.\n The app is forked from this github repository:https://github.com/sid17/iitky12",
 	"defaultSortEntriesBy":"Name",
 	"defaultOrderDescending":false,
 	"paginateNumEntries":10,
-	"searchInKeys": ["Name", "Position", "Organization", "Location", "History_and_brief_bio","Department"],
-	"defaultProfileImage":"logos/default.png",
+	"searchInKeys": ["Name", "Position", "Organization", "Location", "History_and_brief_bio"],
+	"defaultProfileImage":"logos/gdhslogo.png",
 	"contacts": [{
-		"name": "Akshay Aggarwal",
-		"email": "aks.agg94@gmail.com"
+		"name": "Jital Patel",
+		"email": "jital@gmail.com"
 	}, {
-		"name": "Dhruv Singal",
-		"email": "singaldhruv.ds@gmail.com"
-	}, {
-		"name": "Siddhant Manocha",
-		"email": "siddhantmanocha1994@gmail.com"
-	}, {
-		"name": "Peeyush Agarwal",
-		"email": "peeyushagarwal1994@gmail.com"
-	}, {
-		"name": "Pranav Maneriker",
-		"email": "pranavmane@gmail.com"
-	},{
-		"name": "Proneet Verma",
-		"email": "proneet11@gmail.com"
+		"name": "Palash Srivastava",
+		"email": "-"
 	}]
 }
